@@ -52,7 +52,7 @@ public class LoginCrehanaTest extends BaseClass {
         lcap.crehanaLoginStartSessionButton();
 
         MobileElement elementErrorMessage = lcap.crehanaLoginInvalidCredentialsMessage();
-        Assert.assertEquals(elementErrorMessage.getText(),"Invalid credentials");
+        Assert.assertEquals(elementErrorMessage.getText(), "Credenciales inválidas");
         System.out.println("Successful - Test OK..." + elementErrorMessage.getText());
         driver.closeApp();
     }
@@ -74,7 +74,7 @@ public class LoginCrehanaTest extends BaseClass {
         lcap.crehanaLoginStartSessionButton();
 
         MobileElement elementErrorMessage = lcap.crehanaLoginInvalidCredentialsMessage();
-        Assert.assertEquals(elementErrorMessage.getText(),"Invalid credentials");
+        Assert.assertEquals(elementErrorMessage.getText(),"Credenciales inválidas");
         System.out.println("Successful - Test OK..." + elementErrorMessage.getText());
         driver.closeApp();
     }
