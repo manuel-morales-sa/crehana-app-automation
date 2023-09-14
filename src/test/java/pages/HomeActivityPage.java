@@ -1,6 +1,7 @@
 package pages;
 
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -16,6 +17,9 @@ public class HomeActivityPage extends BasePage {
 
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.view.ViewGroup/android.widget.TextView[2]")
     private AndroidElement blogsButton;
+
+    @AndroidFindBy(id = "com.crehana.android:id/categories_recycler_view")
+    private AndroidElement scrollHorizontal;
 
     //Implement constructor
     public HomeActivityPage(AppiumDriver<MobileElement> driver) {
@@ -35,5 +39,10 @@ public class HomeActivityPage extends BasePage {
     public MobileElement blogsButton() {
         blogsButton.click();
         return blogsButton;
+    }
+
+    public MobileElement scrollHorizontal(){
+        scrollHorizontal.click();
+        return scrollHorizontal;
     }
 }

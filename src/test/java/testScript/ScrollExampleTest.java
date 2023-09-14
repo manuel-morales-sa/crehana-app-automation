@@ -1,6 +1,9 @@
 package testScript;
 
 import baseClass.BaseClass;
+import io.appium.java_client.MobileBy;
+import io.appium.java_client.MobileElement;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import pages.HomeActivityPage;
 import pages.LoginActivityPage;
@@ -25,11 +28,20 @@ public class ScrollExampleTest extends BaseClass {
         lcap.crehanaLoginEmailEditText("automation.user@crehana.com");
         lcap.crehanaLoginPasswordEditText("1234567890");
         lcap.crehanaLoginStartSessionButton();
-        Thread.sleep(3000);
+        Thread.sleep(2000);
 
         scroll.scrollElement();
         hap.blogsButton();
 
+        Thread.sleep(1000);
+
+        //Elemento para hacer scroll de manera horizontal
+        MobileElement categories_list = driver.findElement(MobileBy.AndroidUIAutomator(
+                "new UiScrollable(new UiSelector().resourceId(\"com.crehana.android:id/categories_recycler_view\"))" +
+                       ".setAsHorizontalList().scrollIntoView("+ "new UiSelector().text(\"Transformación cultural\"))"));
+        categories_list.click();
+
+        Thread.sleep(6000);
         driver.closeApp();
     }
 
