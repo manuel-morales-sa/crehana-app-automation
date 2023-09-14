@@ -1,13 +1,11 @@
 package testScript;
 
+import Utilities.ScrollAction;
 import baseClass.BaseClass;
 import io.appium.java_client.MobileElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.HomeActivityPage;
-import pages.LoginActivityPage;
-import pages.LoginCrehanaActivityPage;
-import pages.SplashActivityPage;
+import pages.*;
 
 
 public class LoginCrehanaTest extends BaseClass {
@@ -19,6 +17,7 @@ public class LoginCrehanaTest extends BaseClass {
         LoginActivityPage lap = new LoginActivityPage(driver);
         LoginCrehanaActivityPage lcap = new LoginCrehanaActivityPage(driver);
         HomeActivityPage hap = new HomeActivityPage(driver);
+
         System.out.println("Login User Test Started.....");
 
         Thread.sleep(2000);
