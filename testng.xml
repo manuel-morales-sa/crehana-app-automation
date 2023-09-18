@@ -2,7 +2,7 @@
 <suite name="parallel">
     <test name="Device-1" >
         <parameter name="deviceName" value="Xiaomi" />
-        <parameter name="udid" value="emulator-5556" />
+        <parameter name="udid" value="emulator-5554" />
         <!--<parameter name="udid" value="emulator-5554" />-->
         <parameter name="platformVersion" value="11" />
         <parameter name="automationName" value="UiAutomator2" />
@@ -10,7 +10,9 @@
         <parameter name="app" value="C:\\Users\\jugov\\AndroidStudioProjects\\3450.apk" />
         <classes>
             <!--  <class name="testScript.LoginCrehanaTest"/> -->
-             <class name="testScript.BlogsTest"/>
-         </classes>
+            <!--   <class name="testScript.BlogsTest"/>  -->
+            <!--    <class name="testScript.LivesTest"/> -->
+        <class name="testScript.CoursesTest"/>
+        </classes>
      </test>
  </suite>
