@@ -8,21 +8,20 @@ import pages.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class ExploraCrehanaTest extends BaseClass {
+public class CoursesCrehanaTest extends BaseClass {
 
     @Test
-    public void exploraUserNotLogged() throws Exception {
-        //driver.launchApp();
+    public void coursesUserNotLoggedOptions() throws Exception {
         SplashActivityPage splash = new SplashActivityPage(driver);
         LoginActivityPage login = new LoginActivityPage(driver);
         LoginCrehanaActivityPage login_crehana = new LoginCrehanaActivityPage(driver);
         HomeActivityPage home = new HomeActivityPage(driver);
-        ExploraActivityPage explora = new ExploraActivityPage(driver);
+        CoursesActivityPage courses = new CoursesActivityPage(driver);
         ProfileActivityPage profile = new ProfileActivityPage(driver);
         SettingsActivityPage settings = new SettingsActivityPage(driver);
-        System.out.println("Login User Test Started.....");
+        System.out.println("Courses Test Started.....");
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         splash.startSessionButton();
         login.emailLoginButton();
         login_crehana.crehanaLoginEmailEditText("automation.user@crehana.com");
@@ -36,23 +35,14 @@ public class ExploraCrehanaTest extends BaseClass {
         settings.settingsLogOutButton();
         settings.settingsConfirmLogOutButton();
 
-        home.navExploreButton();
-        explora.exploraSearchEditText();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        explora.exploraSearchCancelButton();
+        home.navMyCoursesButton();
 
-        explora.exploraFirstElementList();
-        explora.exploraElementBackButton();
-
-        explora.exploraSecondElementList();
-        explora.exploraElementBackButton();
-
-        explora.exploraThirdElementList();
-        explora.exploraElementBackButton();
-
-        MobileElement elementTitle = explora.exploraTitle();
-        Assert.assertEquals(elementTitle.getText(), "Explora");
-        System.out.println("Successful - Test OK..." + elementTitle.getText());
+        MobileElement elementCourses = courses.unloggedUserMyCourseTitle();
+        boolean isDisplayed = elementCourses.isDisplayed();
+        Assert.assertTrue(isDisplayed);
+        System.out.println("Successful - Test OK");
         driver.closeApp();
+
     }
+
 }

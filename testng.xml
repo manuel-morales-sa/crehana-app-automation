@@ -10,7 +10,8 @@
         <parameter name="app" value="/Users/mmorales/Documents/Crehana/repositorios/apk/Crehana.apk" />
         <classes>
             <!--<class name="testScript.LoginCrehanaTest"/>-->
-            <class name="testScript.ExploraCrehanaTest"/>
+            <class name="testScript.CoursesCrehanaTest"/>
+            <!--<class name="testScript.ExploraCrehanaTest"/>-->
         </classes>
     </test>
 </suite>
