@@ -15,7 +15,6 @@ public class HomeActivityPage extends BasePage {
     private AndroidElement homeCrehanaTitle;
 
     //--------------------NavBar Elements-------------------------//
-
     @AndroidFindBy(id = "com.crehana.android:id/nav_home_user")
     private AndroidElement navHomeUserButton;
 

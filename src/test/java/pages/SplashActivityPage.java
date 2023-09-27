@@ -41,4 +41,5 @@ public class SplashActivityPage extends BasePage {
     public void crehanaLogo() {
         crehanaLogo.getId();
     }
+
 }
