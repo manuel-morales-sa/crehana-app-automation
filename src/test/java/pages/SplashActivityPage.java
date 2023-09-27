@@ -24,6 +24,7 @@ public class SplashActivityPage extends BasePage {
     public SplashActivityPage(AppiumDriver<MobileElement> driver) {
         super(driver);
     }
+
     //create methods to send actions
     public void startSessionButton() {
         startSessionButton.click();

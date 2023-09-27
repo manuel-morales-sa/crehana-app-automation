@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class ForgotPasswordActivityPage extends BasePage{
+public class ForgotPasswordActivityPage extends BasePage {
 
     //------------------------------------------Find selectors---------------------------------------//
 
@@ -44,7 +44,7 @@ public class ForgotPasswordActivityPage extends BasePage{
         crehanaForgotPasswordSendEmailInput.sendKeys(string);
     }
 
-    public void crehanaForgotPasswordButton(){
+    public void crehanaForgotPasswordButton() {
         crehanaForgotPasswordButton.click();
     }
 

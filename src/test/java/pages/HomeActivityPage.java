@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class HomeActivityPage extends BasePage{
+public class HomeActivityPage extends BasePage {
 
     //------------------------------------------Find selectors---------------------------------------//
     @AndroidFindBy(id = "com.crehana.android:id/logo_image_view")
@@ -37,12 +37,12 @@ public class HomeActivityPage extends BasePage{
     }
 
     //create methods to send actions
-    public MobileElement homeLogoCrehanaImage(){
+    public MobileElement homeLogoCrehanaImage() {
         homeLogoCrehanaImage.click();
         return homeLogoCrehanaImage;
     }
 
-    public void homeCrehanaTitle(){
+    public void homeCrehanaTitle() {
         homeCrehanaTitle.getText();
     }
 
