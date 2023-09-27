@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class SettingsActivityPage extends BasePage{
+public class SettingsActivityPage extends BasePage {
 
     //------------------------------------------Find selectors---------------------------------------//
 
@@ -22,15 +22,15 @@ public class SettingsActivityPage extends BasePage{
         super(driver);
     }
 
-    public void settingsLogOutButton(){
+    public void settingsLogOutButton() {
         settingsLogOutButton.click();
     }
 
-    public void settingsConfirmLogOutButton(){
+    public void settingsConfirmLogOutButton() {
         settingsConfirmLogOutButton.click();
     }
 
-    public void settingsCancelLogOutButton(){
+    public void settingsCancelLogOutButton() {
         settingsCancelLogOutButton.click();
     }
 }

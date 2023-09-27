@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class ProfileActivityPage extends BasePage{
+public class ProfileActivityPage extends BasePage {
 
     //------------------------------------------Find selectors---------------------------------------//
 
@@ -16,7 +16,7 @@ public class ProfileActivityPage extends BasePage{
         super(driver);
     }
 
-    public void profileSettingsButton(){
+    public void profileSettingsButton() {
         profileSettingsButton.click();
     }
 

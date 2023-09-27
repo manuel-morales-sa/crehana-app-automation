@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class ExploraActivityPage extends BasePage{
+public class ExploraActivityPage extends BasePage {
 
     //------------------------------------------Find selectors---------------------------------------//
 
@@ -43,7 +43,7 @@ public class ExploraActivityPage extends BasePage{
         super(driver);
     }
 
-    public MobileElement exploraTitle(){
+    public MobileElement exploraTitle() {
         exploraTitle.getText();
         return exploraTitle;
     }
@@ -64,7 +64,7 @@ public class ExploraActivityPage extends BasePage{
         exploraThirdElementList.click();
     }
 
-    public void exploraViewMore(){
+    public void exploraViewMore() {
         exploraViewMore.click();
     }
 
@@ -76,11 +76,11 @@ public class ExploraActivityPage extends BasePage{
         exploraCommunityLives.click();
     }
 
-    public void exploraSearchCancelButton(){
+    public void exploraSearchCancelButton() {
         exploraSearchCancelButton.click();
     }
 
-    public void exploraElementBackButton(){
+    public void exploraElementBackButton() {
         exploraElementBackButton.click();
     }
 }

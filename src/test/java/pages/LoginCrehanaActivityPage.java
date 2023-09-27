@@ -67,7 +67,7 @@ public class LoginCrehanaActivityPage extends BasePage {
         return crehanaLoginInvalidCredentialsMessage;
     }
 
-    public MobileElement crehanaLoginValidateEmailMessage(){
+    public MobileElement crehanaLoginValidateEmailMessage() {
         crehanaLoginValidateEmailMessage.getText();
         return crehanaLoginValidateEmailMessage;
     }

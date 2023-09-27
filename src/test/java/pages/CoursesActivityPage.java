@@ -49,7 +49,6 @@ public class CoursesActivityPage extends BasePage {
     }
 
     //create methods to send actions
-
     public MobileElement coursesTitle() {
         coursesTitle.getText();
         return coursesTitle;
