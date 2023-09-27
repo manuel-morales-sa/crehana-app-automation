@@ -29,7 +29,7 @@ public class BaseClass {
         cap.setCapability("autoGrantPermissions",true);
         cap.setCapability("appium:appWaitActivity", "com.crehana.android.presentation.onboarding.views.UserOnBoardingActivity");
 
-        System.out.println("Aplication Startded .....");
+        System.out.println("Application Started .....");
 
         driver = new AppiumDriver<>(new URL(url), cap);
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
