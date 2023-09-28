@@ -26,7 +26,7 @@ public class BaseClass {
         cap.setCapability("appium:automationName", automationName);
         cap.setCapability("appium:app", app);
         cap.setCapability("platformName", "Android");
-        cap.setCapability("autoGrantPermissions",true);
+        cap.setCapability("autoGrantPermissions", true);
         cap.setCapability("appium:appWaitActivity", "com.crehana.android.presentation.onboarding.views.UserOnBoardingActivity");
 
         System.out.println("Application Started .....");

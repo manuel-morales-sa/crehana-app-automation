@@ -29,6 +29,9 @@ public class LoginCrehanaActivityPage extends BasePage {
     @AndroidFindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.LinearLayout[3]/androidx.cardview.widget.CardView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.TextView")
     private AndroidElement crehanaLoginInvalidCredentialsMessage;
 
+    @AndroidFindBy(id = "com.crehana.android:id/textinput_error")
+    private AndroidElement crehanaLoginValidateEmailMessage;
+
     //Implement constructor
     public LoginCrehanaActivityPage(AppiumDriver<MobileElement> driver) {
         super(driver);
@@ -63,4 +66,10 @@ public class LoginCrehanaActivityPage extends BasePage {
         crehanaLoginInvalidCredentialsMessage.getText();
         return crehanaLoginInvalidCredentialsMessage;
     }
+
+    public MobileElement crehanaLoginValidateEmailMessage() {
+        crehanaLoginValidateEmailMessage.getText();
+        return crehanaLoginValidateEmailMessage;
+    }
+
 }

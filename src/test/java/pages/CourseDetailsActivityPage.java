@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class CourseDetailsActivityPage extends BasePage{
+public class CourseDetailsActivityPage extends BasePage {
 
     //------------------------------------------Find selectors---------------------------------------//
     @AndroidFindBy(id = "com.crehana.android:id/iv_play")
@@ -17,6 +17,8 @@ public class CourseDetailsActivityPage extends BasePage{
     }
 
     //create methods to send actions
-    public void playButtonCourseDetails() {this.playButtonCourseDetails.click();}
+    public void playButtonCourseDetails() {
+        this.playButtonCourseDetails.click();
+    }
 
 }
