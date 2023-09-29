@@ -33,10 +33,10 @@ public class CoursesActivityPage extends BasePage {
     private AndroidElement titleCoursesFirstElementOnList;
 
     @AndroidFindBy(id = "com.crehana.android:id/pb_progress")
-    private AndroidElement CoursesProgressBar;
+    private AndroidElement coursesProgressBar;
 
     @AndroidFindBy(id = "com.crehana.android:id/tv_progress")
-    private AndroidElement CoursesProgressPercentage;
+    private AndroidElement coursesProgressPercentage;
 
     //Unlogged user elements
 
@@ -84,17 +84,18 @@ public class CoursesActivityPage extends BasePage {
     }
 
     public MobileElement CoursesProgressBar() {
-        CoursesProgressBar.getText();
-        return CoursesProgressBar;
+        coursesProgressBar.getText();
+        return coursesProgressBar;
     }
 
     public MobileElement CoursesProgressPercentage() {
-        CoursesProgressPercentage.getText();
-        return CoursesProgressPercentage;
+        coursesProgressPercentage.getText();
+        return coursesProgressPercentage;
     }
 
     public MobileElement unloggedUserMyCourseTitle() {
         unloggedUserMyCourseTitle.getText();
         return unloggedUserMyCourseTitle;
     }
+
 }
